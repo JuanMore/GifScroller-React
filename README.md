@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# GifScroller | Gif scrolling application using the Giphy API
+# GifScroller | A Gif scrolling application
 
 This porject was made with React.js for the frontend, CSS3 and JavaScript. GifScoller utilizes the Giphy API via axios to serve dynamic gifs which are displayed in a masonry grid.
 
