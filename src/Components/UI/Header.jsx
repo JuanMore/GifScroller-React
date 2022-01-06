@@ -1,4 +1,5 @@
 import { FaChevronRight } from 'react-icons/fa';
+import { Link } from "react-router-dom"
 
 function Header() {
     return (
@@ -7,9 +8,9 @@ function Header() {
             <h1 className="logo" alt=''>Gif<span className="logo-color">Scroller</span></h1>
         </header>
         <div className="filter-buttons">
-        <a href="index.html"><button className="filter-btn c-btn btn-primary">Home</button></a>
-        <a href="people.html"><button className="filter-btn">Funny</button></a>
-        <a href="things.html"><button className="filter-btn">Random</button></a>
+        <Link to="/"><button className="filter-btn c-btn btn-primary">Home</button></Link>
+        <Link to="/funny"><button className="filter-btn">Funny</button></Link>
+        <Link to="/random"><button className="filter-btn">Random</button></Link>
                 <button className="filter-btn login-btn btn-primary">Log In <FaChevronRight /> </button>
             </div>
             </>

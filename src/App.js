@@ -1,36 +1,83 @@
 
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Components/UI/Header';
-import GifGrid from './Components/Giphs/GifGrid';
+import GridItems from './Components/Giphs/GridItems'
+import Funny from './Components/Giphs/Funny';
+import Random from './Components/Giphs/Random';
+import Footer from './Components/UI/Footer';
 import './App.css';
 import axios from 'axios'
 
 
 
 function App() {
-  const [items, setItems] = useState([])
+  const [catItems, setCatItems] = useState([])
+  const [funnyItems, setFunnyItems] = useState([])
+  const [randomItems, setRandomItems] = useState([])
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    const fetchItems = async () => {
-      let result = await axios('https://api.giphy.com/v1/gifs/trending?api_key=Q3AxVxgOVnNUXLk7yjCnGS7u1BX2tzfj&limit=50&rating=r')
+    const fetchCats = async () => {
+      let result = await axios('https://api.giphy.com/v1/gifs/search?api_key=Q3AxVxgOVnNUXLk7yjCnGS7u1BX2tzfj&limit=50&rating=r&q=cats')
       let results = result.data.data
-      setItems(results)
+      setCatItems(results)
       console.log(results)
+      setIsLoading(false)
+    }
+
+    // Get funny gifs
+    const fetchFunny = async () => {
+      let funnyResult = await axios('https://api.giphy.com/v1/gifs/search?api_key=Q3AxVxgOVnNUXLk7yjCnGS7u1BX2tzfj&limit=50&rating=r&q=funny')
+      let funnyResults = funnyResult.data.data
+      setFunnyItems(funnyResults)
+      console.log(funnyResults)
       setIsLoading(false)
 
     }
 
-  fetchItems()
+     // Get random gifs
+     const fetchRandom = async () => {
+      let randomResult = await axios('https://api.giphy.com/v1/gifs/search?api_key=Q3AxVxgOVnNUXLk7yjCnGS7u1BX2tzfj&limit=50&rating=r&q=random')
+      let randomResults = randomResult.data.data
+      setRandomItems(randomResults)
+      console.log(randomResults)
+      setIsLoading(false)
+
+    }
+
+    fetchCats()
+    fetchFunny()
+    fetchRandom()
 }, [])
   
 
 
   return (
-    <div className="container">
-      <Header />
-      <GifGrid isLoading={isLoading} items={items} />
+    <Router>
+      <div className="container">
+
+        <Header />
+        <Routes>
+          <Route exact path="/" element={
+            <GridItems isLoading={isLoading} catItems={catItems} />
+          }
+          />
+        
+          <Route path="/funny" element={<Funny isLoading={
+            isLoading} funnyItems={funnyItems} />
+          }
+          />
+        
+          <Route path="/random" element={<Random isLoading={
+            isLoading} randomItems={randomItems} />
+          }
+          />
+
+        </Routes>
+        <Footer />
       </div>
+    </Router>
   );
 }
 
