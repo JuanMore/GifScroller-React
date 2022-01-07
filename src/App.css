@@ -43,6 +43,179 @@
     border: 0;
     margin: 10px 0;
   }
+
+  /* Navbar Styles */
+/* .toggle-nav {
+  padding: 3px;
+  border-radius: 50%;
+  margin: 10px;
+  font-size: 2.2rem;
+  color: #fff;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.navbar-menu {
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  padding: 1.5rem;
+  background-color: rgb(36, 43, 58);
+  transform: translateX(-500px);
+  transition: transform 0.6s ease-in;
+}
+
+.navbar-list {
+  display: block;
+  flex-direction: column;
+  padding-top: 0;
+}
+
+.navbar-list li {
+  margin-right: 80%;
+  margin-bottom: 2rem;
+}
+
+.navbar-menu.show{
+  transform: translateX(-20px);
+}
+
+.menu-social {
+  display:flex;
+  justify-content: space-between;
+  width: 10%;
+  
+} */
+
+.menu-social i {
+  font-size: var(--med-font);
+  color: white;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.menu-social i:hover{
+  color: var(--secondary-color);
+}
+
+
+.login-btn:hover {
+ opacity: 0.8;
+}
+
+.nav-bar {
+	position: absolute;
+	background-color: #1b252f;
+	top: 0;
+	right: 100%;
+	height: 100vh;
+	width: 250px;
+	display: flex;
+  z-index: 1;
+	justify-content: center;
+	align-items: center;
+	transition: position 2.9s;
+	-webkit-transition: position 2.9s;
+	-moz-transition: position 2.9s;
+	-ms-transition: position 2.9s;
+	-o-transition: position 2.9s;
+}
+
+.toggle {
+	left: 0;
+	box-shadow: 1px 0 15px 2px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-menu {
+	background-color: rgba(0, 0, 0, 0.2);
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	width: 40px;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    padding: 2px 2px 2px 3px;
+	border-radius: 5px;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.line {
+	width: 100%;
+	height: 3px;
+	border-radius: 5px;
+	background-color: #fff;
+	transition: transform 0.2s ease-out;
+	-webkit-transition: transform 0.2s ease-out;
+	-moz-transition: transform 0.2s ease-out;
+	-ms-transition: transform 0.2s ease-out;
+	-o-transition: transform 0.2s ease-out;
+}
+
+.toggle .line1 {
+	background-color: #000000;
+	transform: scale(0.9) rotateZ(-45deg) translate(-6px, 4px);
+}
+
+.toggle .line2 {
+	display: none;
+}
+
+.toggle .line3 {
+	background-color: #000000;
+	transform: scale(0.9) rotateZ(45deg) translate(-6px, -4px);
+}
+
+.toggle .toggle-menu {
+	background-color: white;
+}
+
+.nav-list {
+	list-style: none;
+}
+
+.nav-list-item {
+	text-align: center;
+	padding: 10px 0;
+}
+
+.nav-link {
+	color: #fff;
+	font-size: 22px;
+	text-decoration: none;
+	position: relative;
+	padding-bottom: 4px;
+}
+
+.nav-link::before {
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background-color: var(--secondary-color);
+	transform: scaleX(0);
+	transition: transform 0.4s ease-in-out;
+	transform-origin: left;
+	-webkit-transition: transform 0.4s ease-in-out;
+	-moz-transition: transform 0.4s ease-in-out;
+	-ms-transition: transform 0.4s ease-in-out;
+	-o-transition: transform 0.4s ease-in-out;
+}
+
+.nav-link:hover::before {
+	transform: scaleX(1);
+}
+
+/* End Navbar Styles */
+
   
   header .logo {
     color: #000;

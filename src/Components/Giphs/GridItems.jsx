@@ -7,7 +7,7 @@ function GridItems({ catItems, isLoading }) {
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 2, 1000: 4 }}>
             <h3 className="gif-q mb-1">Cats</h3>
             
-            <Masonry columnsCount={4} gutter="10px">
+            <Masonry columnsCount={4} gutter="5px">
                 {catItems.map((item) => (
             <img
                 key={item.images.fixed_height.size + Math.random()}

@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './Components/UI/Navbar';
 import Header from './Components/UI/Header';
 import GridItems from './Components/Giphs/GridItems'
 import Funny from './Components/Giphs/Funny';
@@ -57,6 +58,7 @@ function App() {
     <Router>
       <div className="container">
 
+        <Navbar />
         <Header />
         <Routes>
           <Route exact path="/" element={
