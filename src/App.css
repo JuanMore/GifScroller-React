@@ -105,6 +105,7 @@
 }
 
 .toggle .toggle-menu {
+  position: absolute;
 	background-color: white;
 }
 
