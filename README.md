@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This project was made with React.js for the frontend, CSS3 and JavaScript. GifScoller utilizes the Giphy API via axios to serve dynamic gifs which are displayed in a masonry grid.
 
+Demo: https://lucid-lalande-036bc3.netlify.app/
+
 ![Screen Shot 2022-01-08 at 11 54 27 AM](https://user-images.githubusercontent.com/20747118/148658086-edfa2e9e-672c-469c-a993-ebf5a4825dab.png)
 
 ![Screen Shot 2022-01-08 at 11 54 38 AM](https://user-images.githubusercontent.com/20747118/148658089-0f5188ae-6154-4d33-9167-4e44799fc4b2.png)
