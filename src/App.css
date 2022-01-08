@@ -34,9 +34,7 @@
   }
 
 
-.login-btn:hover {
-    opacity: 0.8;
-}
+
 
 .navbar {
 	position: absolute;
@@ -174,6 +172,7 @@
   .logo-color {
     color: var(--secondary-color);
   }
+
   
   /* Homepage buttons */
 .filter-buttons {
@@ -201,6 +200,11 @@
   background-color: var(--secondary-color);
   color: #fff;
 }
+
+.login-btn:hover {
+  opacity: 0.8;
+}
+
 /* End homepage buttons */
 
   
