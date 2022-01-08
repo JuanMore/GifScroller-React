@@ -9,7 +9,7 @@ function Header() {
         </header>
         <div className="filter-buttons">
 
-        <Link to="/"><button className="filter-btn c-btn btn-primary">Home</button></Link>
+        <Link to="/"><button className="filter-btn">Home</button></Link>
         <Link to="/funny"><button className="filter-btn">Funny</button></Link>
         <Link to="/random"><button className="filter-btn">Random</button></Link>
                 <button className="filter-btn login-btn btn-primary">Log In <FaChevronRight /> </button>

@@ -4,7 +4,7 @@ function Navbar() {
 	const [open, setOpen] = useState(false)
 
     return (
-		<nav className={`header__nav nav-bar ${open ? "toggle" : ""}`}>
+		<nav className={`header__nav navbar ${open ? "toggle" : ""}`}>
 		<a className="toggle-menu" onClick={() => setOpen(!open)}>
 			<div className="line line1"></div>
 			<div className="line line2"></div>

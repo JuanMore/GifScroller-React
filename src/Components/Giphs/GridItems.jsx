@@ -4,10 +4,10 @@ import Spinner from "../UI/Spinner"
 function GridItems({ catItems, isLoading }) {
     return isLoading ? (<Spinner />) : (
         
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 2, 1000: 4 }}>
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 2, 1000: 3 }}>
             <h3 className="gif-q mb-1">Cats</h3>
             
-            <Masonry columnsCount={4} gutter="5px">
+            <Masonry columnsCount={3} gutter="5px">
                 {catItems.map((item) => (
             <img
                 key={item.images.fixed_height.size + Math.random()}

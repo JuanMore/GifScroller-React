@@ -1,4 +1,5 @@
-import {Link} from 'react-router-dom'
+import { FaFacebook, FaTwitter } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 function NavLinks() {
     return (
         <ul className="nav-list">
@@ -10,7 +11,15 @@ function NavLinks() {
         <li className="nav-list-item"><Link to="/" className="nav-link">About Us</Link></li>
         <li className="nav-list-item">
             <Link to="/" className="nav-link">Contacts</Link>
-        </li>
+            </li>
+            <ul className="nav-list-social">
+                <li className="nav-social-item"><Link to="/" className="nav-link">
+                    <FaFacebook size={25} /></Link>
+                </li>
+                <li className="nav-social-item"><Link to="/" className="nav-link">
+                    <FaTwitter size={25} /></Link>
+                </li>
+            </ul>
     </ul>
     )
 }
