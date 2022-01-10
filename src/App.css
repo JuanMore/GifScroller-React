@@ -34,7 +34,7 @@
   }
 
 
-
+/* Navbar Styling */
 
 .navbar {
 	position: absolute;
@@ -161,7 +161,7 @@
 
 /* End Navbar Styles */
 
-  
+/* Header Styles */
   header .logo {
     color: #000;
     font-size: 5rem;

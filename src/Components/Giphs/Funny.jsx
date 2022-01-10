@@ -5,7 +5,6 @@ function Funny({ funnyItems, isLoading }) {
     return isLoading ? (<Spinner />) : (
         
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 2, 1000: 3 }}>
-            <h3 className="gif-q mb-1">Funny</h3>
             
             <Masonry columnsCount={3} gutter="10px">
                 {funnyItems.map((item) => (

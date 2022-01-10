@@ -5,7 +5,6 @@ function Random({ randomItems, isLoading }) {
     return isLoading ? (<Spinner />) : (
         
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 2, 1000: 3 }}>
-            <h3 className="gif-q mb-1">Random</h3>
             
             <Masonry columnsCount={3} gutter="10px">
                 {randomItems.map((item) => (
