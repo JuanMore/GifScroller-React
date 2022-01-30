@@ -10,7 +10,7 @@ function NavLinks() {
         </li>
         <li className="nav-list-item"><Link to="/" className="nav-link">About Us</Link></li>
         <li className="nav-list-item">
-            <Link to="/" className="nav-link">Contacts</Link>
+            <Link to="/" className="nav-link">Contact</Link>
             </li>
             <ul className="nav-list-social">
                 <li className="nav-social-item"><Link to="/" className="nav-link">

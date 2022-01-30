@@ -242,4 +242,14 @@
   margin-bottom: 5px;
 }
 
+@media(max-width: 768px){
+  header .logo {
+    font-size: 3.2rem;
+  }
 
+  .filter-buttons .filter-btn {
+    font-size: .5rem;
+    width: 70px;
+    padding: 7px;
+  }
+}
